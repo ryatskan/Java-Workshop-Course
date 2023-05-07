@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="630.0" maxWidth="630.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.client.controllers.PlayController">
+   <children>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFFFF;">
+          <columnConstraints>
+              <ColumnConstraints hgrow="SOMETIMES" percentWidth="75.0" />
+              <ColumnConstraints hgrow="SOMETIMES" percentWidth="25.0" />
+          </columnConstraints>
+          <rowConstraints>
+              <RowConstraints percentHeight="100.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+          <children>
+              <GridPane fx:id="main" minWidth="160">
+                  <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="95.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="95.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                      <RowConstraints vgrow="SOMETIMES" />
+                      <RowConstraints percentHeight="80.0" vgrow="ALWAYS" />
+                      <RowConstraints vgrow="SOMETIMES" />
+                  </rowConstraints>
+                <children>
+                    <HBox fx:id="resignButtonField" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                    <HBox fx:id="upperUsernameField" alignment="CENTER" style="-fx-padding: 0 0 0 10;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <Circle fx:id="upperCircle" fill="WHITE" radius="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" style="-fx-padding: 5;">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Circle>
+                        <Label fx:id="upperUsername" style="-fx-padding: 5;" GridPane.halignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </HBox>
+                    <HBox fx:id="lowerUsernameField" alignment="CENTER" style="-fx-padding: 0 0 0 10;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                        <Circle fx:id="lowerCircle" fill="WHITE" radius="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Circle>
+                        <Label fx:id="lowerUsername" style="-fx-padding: 5;" GridPane.halignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </HBox>
+                </children>
+            </GridPane>
+            <Pane prefHeight="400.0" prefWidth="167.0" GridPane.columnIndex="1">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="150.0" spacing="5.0">
+                     <children>
+                          <MFXButton fx:id="leaveButton" maxHeight="100" maxWidth="150.0" prefHeight="40.0" prefWidth="150.0" text="Leave"> </MFXButton>
+                        <MFXButton fx:id="drawButton" maxHeight="100" maxWidth="151.0" prefHeight="40.0" prefWidth="151.0" text="Offer Draw" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Game Name:" wrappingWidth="123.42578125">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="gameName" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Nme:" wrappingWidth="69.92578125">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="White Player Name:" wrappingWidth="151.42578125">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="whitePlayerName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="79.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Black Player Name:" wrappingWidth="151.42578125">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="blackPlayerName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="62.42578125" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Current Turn:" wrappingWidth="151.42578125">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="turnText" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="79.0" />
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>
