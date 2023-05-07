@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xmlns="http://example.com/ns"
+           targetNamespace="http://example.com/ns">
+    <xs:element name="root-element">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="sizeElement" type="sizeList"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="size">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="T1"/>
+            <xs:enumeration value="T2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="sizeList">
+        <xs:list itemType="size" />
+    </xs:simpleType>
+</xs:schema>

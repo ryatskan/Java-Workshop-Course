@@ -1,0 +1,12 @@
+<!DOCTYPE tutorials SYSTEM
+        "C:\Users\Roy Yatskan\OneDrive\University\Stav2023\WorkshopInJava\examples\BASICS\dtdexample.dtd">
+<tutorials type="web">
+  <tutorial>
+    <name>XML Tutorial</name>
+    <url>https://www.quackit.com/xml/tutorial</url>
+  </tutorial>
+  <tutorial>
+    <name>HTML Tutorial</name>
+    <url>https://www.quackit.com/html/tutorial</url>
+  </tutorial>
+</tutorials>

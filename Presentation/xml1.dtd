@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ATTLIST Hey r CDATA #REQUIRED>
+<!ATTLIST Hey3 r ID #REQUIRED>
+<!ELEMENT Hey (Hey3)>
+<!ELEMENT Hey3 (#PCDATA)>

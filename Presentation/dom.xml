@@ -1,0 +1,14 @@
+<?xml version = "1.0"?>
+<class>
+   <student id = "393">
+      <firstname>dinkar</firstname>
+   </student>
+
+   <student id = "493">
+      <firstname>Vaneet</firstname>
+   </student>
+
+   <student id = "593">
+      <firstname>jasvir</firstname>
+   </student>
+</class>
